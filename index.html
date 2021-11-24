@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+    <title>TrackballRotator Demo</title>
+    <style>
+        body {
+            background-color: #EEEEEE;
+        }
+    </style>
+
+
+    <script src="./trackball-rotator.js"></script>
+    <script src="https://webgl2fundamentals.org/webgl/resources/m4.js"></script>
+    <script src="./shader.gpu"></script>
+    <script src="./main.js"></script>
+
+
+</head>
+
+<body onload="init()">
+
+    <noscript>
+        <hr>
+        <h3>This page requires Javascript and a web browser that supports WebGL</h3>
+        <hr>
+    </noscript>
+    <div>
+        <div>
+            <input type="checkbox" id="wireframe" name="wireframe">
+            <label for="wireframe">WireFrame</label>
+        </div>
+    </div>
+    <div>
+        <input type="number" id="eye_separation" name="eye_separation" value="0.35" step="0.01">
+        <label for="eye_separation">Eye Separation</label>
+    </div>
+
+    <div id="canvas-holder">
+        <canvas width="1000" height="1000" id="webglcanvas" style="background-color:black"></canvas>
+    </div>
+
+
+
+
+
+</body>
+
+</html>
